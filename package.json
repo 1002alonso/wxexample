@@ -22,6 +22,7 @@
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "prepare": "husky install",
     "format": "prettier --write src/**/*.{ts,tsx,css,html,json.js,css,scss}",
     "lint": "eslint src/**/*{.ts,.tsx}",
     "commit": "git cz"
@@ -31,6 +32,7 @@
       "path": "git-cz"
     }
   },
+
   "lint-staged": {
     "src/**/*.{ts,tsx,css,html,json.js,css,scss}": [
       "prettier --write 'src/**/*.{ts,tsx,css,html,json.js,css,scss}'",
