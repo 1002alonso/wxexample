@@ -20,7 +20,7 @@ export class MyComponent {
   /**
    * The last name
    */
-  @Prop() readonly last: string;
+  @Prop()  last: string;
 
   private getText(): string {
     return format(this.first, this.middle, this.last);
