@@ -35,9 +35,10 @@
   "lint-staged": {
     "src/**/*.{ts,tsx,css,html,json.js,css,scss}": [
       "prettier --write 'src/**/*.{ts,tsx,css,html,json.js,css,scss}'",
-      "eslint --fix src/**/*{.ts,.tsx}",
-      "stencil test --spec"
-    ]
+      "eslint --fix src/**/*{.ts,.tsx}"
+    ],
+    "src/**/*.spec.ts": "stencil test --spec"
+
   },
   "dependencies": {
     "@stencil/core": "^2.7.0"
